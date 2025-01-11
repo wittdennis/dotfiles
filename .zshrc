@@ -131,7 +131,7 @@ export KUBE_EDITOR="code --wait"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export PATH="~/.cargo/bin:$PATH"
+export PATH=~/.cargo/bin:$PATH
 
 # Created by `pipx` on 2024-07-02 18:17:14
 export PATH="$PATH:/Users/dennis/.local/bin"
@@ -142,3 +142,8 @@ b64 () {
 b64d () {
   echo "$@" | base64 -d
 }
+
+export GOPATH=~/.go
+export GOBIN=~/.go/bin
+
+export PATH=~/.go/bin:$PATH
