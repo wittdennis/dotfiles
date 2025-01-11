@@ -1,0 +1,4 @@
+.config/hcloud/cli.toml
+.ssh/*.key
+.kube/config
+.ansible/vault-passwords/*
