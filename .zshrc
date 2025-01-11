@@ -119,7 +119,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # pnpm
-export PNPM_HOME="/Users/dennis/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
 *":$PNPM_HOME:"*) ;;
 *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -134,7 +134,7 @@ export KUBE_EDITOR="code --wait"
 export PATH=~/.cargo/bin:$PATH
 
 # Created by `pipx` on 2024-07-02 18:17:14
-export PATH="$PATH:/Users/dennis/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 b64 () {
   echo -n "$@" | base64
