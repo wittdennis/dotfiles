@@ -1,16 +1,14 @@
 # This is Git's per-user configuration file.
 [user]
-	name = Dennis Witt
-	email = dennis.witt@big-direkt.de
-[includeIf "gitdir:~/workspaces/private/"]
-	path = ~/workspaces/private/.gitconfig
+name = Dennis Witt
+email = 94747795+wittdennis@users.noreply.github.com
+[includeIf "gitdir:~/workspaces/big-direkt/"]
+path = ~/workspaces/big-direkt/.gitconfig
 [push]
-	autoSetupRemote = true
+autoSetupRemote = true
 [init]
-	templateDir = /Users/dennis/.git-template
+templateDir = /Users/dennis/.git-template
 [credential]
-	helper = osxkeychain
-	helper = 
-	helper = /usr/local/share/gcm-core/git-credential-manager
-[credential "https://dev.azure.com"]
-	useHttpPath = true
+helper = osxkeychain
+helper =
+helper = /usr/local/share/gcm-core/git-credential-manager
