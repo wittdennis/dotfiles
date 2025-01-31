@@ -1,3 +1,4 @@
+# homebrew
 PLATFORM="undefined"
 case "$OSTYPE" in
 solaris*) PLATFORM=solaris ;;
@@ -16,5 +17,8 @@ elif [ $PLATFORM = 'linux' ]; then
 else
 fi
 
-# Created by `pipx` on 2024-07-02 18:17:14
+# pipx
 export PATH="$PATH:$HOME/.local/bin"
+
+# golang
+export PATH="$PATH:/usr/local/go/bin"
