@@ -22,3 +22,9 @@ export PATH="$PATH:$HOME/.local/bin"
 
 # golang
 export PATH="$PATH:/usr/local/go/bin"
+
+# rust cargo
+export PATH="$PATH:$HOME/.cargo/bin"
+
+# go
+export PATH="$PATH:$HOME/.go/bin"
