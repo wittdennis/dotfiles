@@ -142,3 +142,10 @@ b64 () {
 b64d () {
   echo "$@" | base64 -d
 }
+
+# bun completions
+[ -s "/home/dennis/.bun/_bun" ] && source "/home/dennis/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
