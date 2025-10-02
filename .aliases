@@ -2,3 +2,4 @@ alias kctx='kubectx'
 alias kns='kubens'
 alias python='python3'
 alias ls='ls -hal'
+alias docker=podman
