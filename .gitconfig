@@ -14,3 +14,7 @@ helper =
 helper = /usr/local/share/gcm-core/git-credential-manager
 [safe]
 	directory = *
+[http]
+	lowSpeedLimit = 1000
+	lowSpeedTime = 60
+	postBuffer = 524288000
