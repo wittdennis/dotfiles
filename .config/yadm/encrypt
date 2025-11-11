@@ -2,3 +2,4 @@
 .ssh/*.key
 .kube/config
 .ansible/vault-passwords/*
+.talos/config
