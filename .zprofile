@@ -4,6 +4,7 @@ case "$OSTYPE" in
 solaris*) PLATFORM=solaris ;;
 darwin*) PLATFORM=osx ;;
 linux*) PLATFORM=linux ;;
+linux-gnu*) PLATFORM=linux ;;
 bsd*) PLATFORM=bsd ;;
 msys*) PLATFORM=windows ;;
 cygwin*) PLATFORM=windows ;;
