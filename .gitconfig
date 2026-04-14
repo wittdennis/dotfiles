@@ -5,13 +5,15 @@ email = 94747795+wittdennis@users.noreply.github.com
 	signingkey = B44D1C0718978D13
 [includeIf "gitdir:~/workspaces/big-direkt/"]
 path = ~/workspaces/big-direkt/.gitconfig
+[includeIf "gitdir:~/workspaces/private/git.derwitt.site/"]
+path = ~/workspaces/private/git.derwitt.site/.gitconig
 [push]
 autoSetupRemote = true
 [init]
 templateDir = /Users/dennis/.git-template
 [credential]
 helper = osxkeychain
-	helper = 
+	helper =
 	helper = /usr/local/share/gcm-core/git-credential-manager
 [safe]
 	directory = *
