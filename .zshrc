@@ -152,3 +152,16 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # talosctl
 source <(talosctl completion zsh)
+
+aws-ssm-connect() {
+  local INSTANCE=$1
+  echo "Starting SSM session to instance with Name tag: $INSTANCE"
+
+  local INSTANCE_ID=$(aws ec2 describe-instances \
+    --filters "Name=tag:Name,Values=$INSTANCE" "Name=instance-state-name,Values=running" \
+    --query 'Reservations[0].Instances[0].InstanceId' \
+    --output text)
+
+  echo "Instance ID: $INSTANCE_ID"
+  aws ssm start-session --target "$INSTANCE_ID"
+}
